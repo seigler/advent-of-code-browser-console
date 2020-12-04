@@ -1,0 +1,3 @@
+let d=document.body.textContent.replaceAll('cid:').split(`
+
+`);[d.filter(l=>/(:[\s\S]+){7}/m.test(l)).length,d.filter(l=>/((byr:(19[2-9]\d|200[012])|iyr:(201\d|2020)|eyr:(202\d|2030)|hgt:(1[5-8]\d|19[0-3])cm|hgt:(59|6\d|7[0-6])in|hcl:#[\da-f]{6}|ecl:(amb|blu|brn|gry|grn|hzl|oth)|pid:\d{9})\b[\s\S]*){7}/gm.test(l)).length]
