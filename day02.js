@@ -1,0 +1,2 @@
+let d=document.body.textContent.trim().split(`
+`).map(l=>l.match(/(.+)-(.+) (.): (.+)$/));[d.reduce((s,[_,l,u,n,h])=>{const c=[...h.matchAll(RegExp(n,'g'))].length;return c<=u&&c>=l?s+1:s},0),d.reduce((s,[_,a,b,n,h])=>{return h[a-1]==n^h[b-1]==n?s+1:s},0)];

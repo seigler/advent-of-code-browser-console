@@ -1,0 +1,1 @@
+let d=document.body.textContent.trim().split('\n').map(a=>parseInt(a)),s=0,f=(a,b,c=2)=>{for(let e,g,h=0;h<d.length;e=d[h++])if(2<c){if(g=f(a+1,b-e,c-1),g)return e*g;}else if(d.includes(b-e))return e*(b-e)};[f(0,2020),f(0,2020,3)]
