@@ -1,1 +1,1 @@
-let d=document.body.textContent.replaceAll`cid:`.split`\n\n`;[d.filter(l=>/(:[\s\S]+){7}/m.test(l)).length,d.filter(l=>/((by.:(1...|200[0-2])|iyr:20(1.|20)|eyr:20(2.|30)|hgt:...(n|cm)|hc.:#.{6}|ec.:..[buynlh]|pi.:\d{9})\b[\s\S]*){7}/gm.test(l)).length]
+d=document.body.textContent.replaceAll`cid:`.split`\n\n`;[d.filter(l=>/(:[\s\S]+){7}/m.test(l)).length,d.filter(l=>/((by.:(1...|200[0-2])|iyr:20(1.|20)|eyr:20(2.|30)|hgt:...(n|cm)|hc.:#.{6}|ec.:..[buynlh]|pi.:\d{9})\b[\s\S]*){7}/gm.test(l)).length]
