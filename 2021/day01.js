@@ -1,0 +1,1 @@
+d=$('body').innerText.trim().split`\n`;t=(d,n)=>d.reduce((a,x,i)=>a+(+x>d[i-n]),0);[t(d,1),t(d,3)]

@@ -1,0 +1,1 @@
+d=$('body').innerText.trim().split`\n`.map(l=>l.split` `);[(j=d.reduce((a,[c,v])=>({f:a=>v=>(a.h+=v,a),d:a=>v=>(a.d+=v,a),u:a=>v=>(a.d-=v,a)}[c[0]](a)(+v)),{h:0,d:0}),j.h*j.d),(k=d.reduce((a,[c,v])=>({f:a=>v=>(a.h+=v,a.d+=a.a*v,a),d:a=>v=>(a.a+=v,a),u:a=>v=>(a.a-=v,a)}[c[0]](a)(+v)),{h:0,d:0,a:0}),k.h*k.d)]
