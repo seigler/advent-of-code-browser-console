@@ -1,0 +1,1 @@
+s=Math.sign,S=D=>(V=new Map(),$`pre`.innerText.trim().split`\n`.map(l=>l.split(/ -> |,/).map(x=>+x)).map(([a,b,c,d])=>{for(X=s(c-a),Y=s(d-b),x=a,y=b;!(D*X*Y)&(x!=c+X|y!=d+Y);x+=X,y+=Y){k=`${x},${y}`;V.set(k,(V.get(k)||0)+1)}}),[...V.values()].filter(x=>x>1).length);[S(1),S()]
