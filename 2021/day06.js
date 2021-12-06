@@ -1,0 +1,1 @@
+[80,256].map(d=>{B=Array(9).fill(0);$`pre`.innerText.trim().split`,`.map(f=>B[+f]++);for(i=0;i<d;i++){B[(7+i)%9]+=B[i%9]};return B.reduce((a,x)=>a+x,0)})
