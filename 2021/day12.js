@@ -1,1 +1,1 @@
-s='start',e='end',M={},b=(f,t)=>{if(f!=e&&t!=s)M[f]=[...(M[f]||[]),t]};$`pre`.innerText.split`\n`.map(l=>{[f,t]=l.split`-`;b(f,t);b(t,f)});C=(h,d)=>(L=h[h.length-1],L==e?1:(L>']'&&h.slice(0,-1).includes(L)&&d++)?0:M[L].reduce((a,t)=>a+C([...h,t],d),0));[1,0].map(x=>C([s],x))
+s='start',e='end',M={},b=(f,t)=>f!=e&&t!=s?M[f]=[...(M[f]||[]),t]:0;$('pre').innerText.split`\n`.map(l=>{[f,t]=l.split`-`;b(f,t);b(t,f)});C=(h,d)=>(L=h[h.length-1],L==e?1:(L>']'&&h.slice(0,-1).includes(L)&&d++)?0:M[L].reduce((a,t)=>a+C([...h,t],d),0));[1,0].map(x=>C([s],x))
