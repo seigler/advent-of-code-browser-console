@@ -1,1 +1,1 @@
-d=$('pre').innerText.trim().split`\n`;t=(d,n)=>d.reduce((a,x,i)=>a+(+x>d[i-n]),0);[t(d,1),t(d,3)]
+d=$('pre').innerText.trim().split`\n`;[1,3].map(n=>d.reduce((a,x,i)=>a+(+x>d[i-n]),0))
