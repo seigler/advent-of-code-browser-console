@@ -1,0 +1,1 @@
+Q=console.log,[D,F]=$('pre').innerText.trim().split`\n\n`.map(x=>x.split`\n`);D=new Set(D);F=F.map(x=>x.split(/[ =]/));F.map(([z,x,a,n],i)=>{N=new Set();D.forEach(d=>{[x,y]=d.split`,`;a<"y"?N.add(+x>+n?2*n-x+','+y:d):N.add(+y>+n?x+','+(2*n-y):d)});D=N;i<1?Q(D.size):0});for(let x,y=0,L;L="",y<6;y++){for(x=0;x<41;x++)L+=" █"[+D.has(x+','+y)];Q(L)}
