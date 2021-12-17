@@ -1,0 +1,1 @@
+[a,b,c,d]=$('pre').innerText.match(/-?\d+/g).map(x=>+x),B=M=C=0;for(V=c;V<=-c;V++)for(W=1;W<=b;W++,M>B?B=M:0)for(x=y=M=0,X=W,Y=V;y>M?M=y:0,x<=b&&y>=c||(M=0);x+=X,y+=Y,X-=Math.sign(X),Y--)if(!(x<a||x>b||y<c||y>d)&&++C)break;[B,C]
