@@ -1,0 +1,1 @@
+[a,b,c]=$("pre").innerText.trim().split`\n\n`.map(x=>x.split`\n`.reduce((a,c)=>a+(+c),0)).sort((a,b)=>b-a);[a,a+b+c]
